@@ -3,6 +3,11 @@
   "name": "Instagram Auto-Scroller",
   "version": "1.0",
   "description": "Auto-scrolling and comment opening for Instagram Reels.",
+  "icons": {
+    "16": "imgs/icon16.png",
+    "48": "imgs/icon48.png",
+    "128": "imgs/icon128.png"
+  },
   "permissions": [
     "storage", 
     "activeTab", 
