@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Auto-Scroller",
+  "version": "1.0",
+  "description": "Auto-scrolling and comment opening for Instagram Reels.",
+  "permissions": [
+    "storage", 
+    "activeTab", 
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/reels/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
