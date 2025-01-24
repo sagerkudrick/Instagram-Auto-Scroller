@@ -224,8 +224,6 @@ if (window.location.href.startsWith("https://www.instagram.com/reels/")) {
         console.log("Visible comment button found, clicking it...");
         commentButton.closest('div[role="button"]').click();
 
-        setTimeout(() => {printCommentsToConsole()}, 1000)
-
         console.log("Clicked comment button for visible video.");
       } else {
         console.log("No visible comment button found.");
@@ -274,5 +272,4 @@ if (window.location.href.startsWith("https://www.instagram.com/reels/")) {
     });
 
   }
-
 }
