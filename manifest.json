@@ -4,10 +4,13 @@
   "version": "1.0",
   "description": "Auto-scrolling and comment opening for Instagram Reels.",
   "icons": {
-    "16": "imgs/icon16.png",
-    "48": "imgs/icon48.png",
-    "128": "imgs/icon128.png"
-  },
+      "16": "imgs/icon16.png",
+      "19": "imgs/icon19.png",
+      "32": "imgs/icon32.png",
+      "38": "imgs/icon38.png",
+      "48": "imgs/icon48.png",
+      "128": "imgs/icon128.png"
+    },
   "permissions": [
     "storage", 
     "activeTab", 
@@ -24,6 +27,7 @@
     }
   ],
   "action": {
+    "default_icon": "imgs/icon128.png",
     "default_popup": "popup/popup.html"
   },
   "host_permissions": [
