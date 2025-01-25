@@ -13,7 +13,7 @@ A Chrome extension that enhances your Instagram Reels experience by automating t
 
 ## How to Install
 1. Manual Installation:
-   - Clone the repository (or DL zip):
+   - Clone the repository (or at the top: <> Code -> Download ZIP):
      ```bash
      git clone https://github.com/sagerkudrick/instagram-auto-scroller.git
      ```
