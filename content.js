@@ -1,11 +1,10 @@
 // ----------- State Variables ----------- //
-let isOnReels = false; // Track if we're on /reels/
-let appIsRunning = false; // Track if the app is currently running
-let findComment; // Variable to store the timeout ID
-let newVideoObserver; // Variable to store the IntersectionObserver
-let instagramObserver; // Variable to store the URL observer
+let isOnReels = false;
+let appIsRunning = false; 
+let findComment; 
+let newVideoObserver; 
+let instagramObserver; 
 
-// ----------- Core Logic ----------- //
 
 // Function to stop the app
 function stopApp() {
@@ -214,7 +213,7 @@ function initializeExtension() {
       const nextVideo = nextVideoInfo[0];
       const nextVideoIndex = nextVideoInfo[1];
 
-      if (nextVideo) {
+      if (nextVideo && autoReelsStart) {
         scrollToNextVideo(nextVideo, nextVideoIndex);
       }
     }
@@ -262,12 +261,15 @@ function initializeExtension() {
             return;
           }
 
+
+
           if (entry.isIntersecting && !entry.target.dataset.processed) {
             console.log("Video is in view:", entry.target);
             console.log("autoComments: " + autoComments);
             if (autoComments) {
               openCommentsForVideo(entry.target);
             }
+
             // Mark this video as processed to prevent multiple triggers
             entry.target.dataset.processed = "true";
           } else if (!entry.isIntersecting) {
