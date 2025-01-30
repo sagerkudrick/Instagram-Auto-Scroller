@@ -21,4 +21,4 @@ A Chrome extension that enhances your Instagram Reels experience by automating t
    - Enable **Developer mode** in the top-right corner.
    - Click **Load unpacked** and select the folder containing the extension.
 
-2. Alternatively, install through the Chrome Web Store (Coming soon).
+2. Alternatively, install through the [Chrome Web Store](https://chromewebstore.google.com/detail/instagram-auto-scroller/ehaacfaljfmafkhgcoddfcdofdigpnhg).
